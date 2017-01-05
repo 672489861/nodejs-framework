@@ -23,12 +23,12 @@ This is a simple framework for node project,it includes some demos.
 > confirm your mongodb service start
 
 ### Step 5: install dependencies
-use following command to install npm dependencies.
-> *npm install*
+> use following command to install npm dependencies.
+*npm install*
 
 ### Step 6: run your application
-use following command to start the application.
-> *npm start*
+> use following command to start the application.
+*npm start*
 
 ## References:
 - Source Code:
