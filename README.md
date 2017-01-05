@@ -34,29 +34,29 @@ This is a simple framework for node project,it includes some demos.
 - Source Code:
 https://github.com/672489861/nodejs-framework
 - NodeJS:
-https://nodejs.org/en/
+https://nodejs.org/en/  
 http://nodejs.cn/
 - Express:
 http://www.expressjs.com.cn/4x/api.html
 - mysql:
-http://www.mysql.com/
+http://www.mysql.com/  
 https://www.npmjs.com/package/mysql
 - MongoDB:
-https://www.mongodb.com/
+https://www.mongodb.com/  
 http://www.runoob.com/mongodb/mongodb-tutorial.html
 - Mongoose:
 http://www.nodeclass.com/api/mongoose.html http://cnodejs.org/topic/504b4924e2b84515770103dd
 - Async:
-http://caolan.github.io/async/
+http://caolan.github.io/async/  
 http://cnodejs.org/topic/54acfbb5ce87bace2444cbfb
 
 - Additional URLS
 - AngularJS
-https://docs.angularjs.org/
-https://angular.cn/
-http://www.angularjsapi.cn/#/a
-https://angular.io/
-http://www.runoob.com/angularjs/angularjs-html-events.html
+https://docs.angularjs.org/  
+https://angular.cn/  
+http://www.angularjsapi.cn/#/a  
+https://angular.io/  
+http://www.runoob.com/angularjs/angularjs-html-events.html  
 - Bootstrap
 http://getbootstrap.com/
 
