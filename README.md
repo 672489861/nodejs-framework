@@ -15,8 +15,8 @@ This is a simple framework for node project,it includes some demos.
 *git clone https://github.com/672489861/nodejs-framework.git*
 
 ### Step 3: run mysql servers
-> confirm your mysql service start
-> run `doc/mysql.sql`
+> confirm your mysql service start  
+> run `doc/mysql.sql`  
 > confirm your mysql server connection URL in `src/server/config/config.js`
 
 ### Step 4: run mongodb servers
@@ -31,33 +31,34 @@ This is a simple framework for node project,it includes some demos.
 *npm start*
 
 ## References:
-- Source Code:
-https://github.com/672489861/nodejs-framework
-- NodeJS:
+- Source Code:  
+https://github.com/672489861/nodejs-framework  
+- NodeJS:  
 https://nodejs.org/en/  
 http://nodejs.cn/
-- Express:
+- Express:  
 http://www.expressjs.com.cn/4x/api.html
-- mysql:
+- mysql:  
 http://www.mysql.com/  
 https://www.npmjs.com/package/mysql
-- MongoDB:
+- MongoDB:  
 https://www.mongodb.com/  
 http://www.runoob.com/mongodb/mongodb-tutorial.html
-- Mongoose:
-http://www.nodeclass.com/api/mongoose.html http://cnodejs.org/topic/504b4924e2b84515770103dd
-- Async:
+- Mongoose:  
+http://www.nodeclass.com/api/mongoose.html  
+http://cnodejs.org/topic/504b4924e2b84515770103dd  
+- Async:  
 http://caolan.github.io/async/  
 http://cnodejs.org/topic/54acfbb5ce87bace2444cbfb
 
 - Additional URLS
-- AngularJS
+- AngularJS  
 https://docs.angularjs.org/  
 https://angular.cn/  
 http://www.angularjsapi.cn/#/a  
 https://angular.io/  
 http://www.runoob.com/angularjs/angularjs-html-events.html  
-- Bootstrap
+- Bootstrap  
 http://getbootstrap.com/
 
 
