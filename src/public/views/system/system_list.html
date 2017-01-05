@@ -1,9 +1,9 @@
 <div class="col-sm-4 col-sm-offset-4">
     <div class="checkbox" ng-repeat="system in systems | orderBy: 'text'">
         <label>
-            <input type="checkbox" ng-click="deleteTodo(system.id)">
-            {{ $index + 1 }} : {{system.name}} <a href ng-click="gotoDetailPage(system.id)">Edit</a>
+            <input type="checkbox">{{ $index + 1 }} : {{system.name}} <a href ng-click="gotoDetailPage(system.id)">Edit</a>&nbsp;
+            <a href ng-click="deleteSystem(system.id)">Delete</a>
         </label>
     </div>
 </div>
-<div class="col-sm-4 col-sm-offset-4"><a class="btn btn-default" href ui-sref="system.add">add new item</a></div>
+<div class="col-sm-4 col-sm-offset-4"><a class="btn btn-default" href ui-sref="systemAdd">add new item</a></div>

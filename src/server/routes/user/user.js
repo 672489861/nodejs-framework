@@ -11,7 +11,7 @@ router.post('/login', function (req, res, next) {
   }, function (result) {
     if (result.length === 1) {
       req.session.user = result[0];
-      res.redirect('/system/testmysql');
+      res.redirect('/index.html');
     } else {
       res.redirect('back');
     }

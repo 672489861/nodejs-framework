@@ -15,6 +15,16 @@ systemDao.queryAllUser = function (errorHandle, successHandle) {
   });
 };
 
+systemDao.queryUserWithId = function (id, errorHandle, successHandle) {
+  mysqlUtil.query('SELECT * FROM t_user where id = ?', id, function (err, result) {
+    if (err) {
+      errorHandle(err);
+    } else {
+      successHandle(result);
+    }
+  });
+};
+
 systemDao.addUser = function (params, errorHandle, successHandle) {
   mysqlUtil.query('INSERT INTO t_user(name,age) VALUES(?,?)', params, function (err, result) {
     if (err) {
