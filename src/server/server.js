@@ -27,8 +27,6 @@ app.use(methodOverride('X-Method-Override'));
 
 // configuration static files catalog
 app.use(express.static(path.join(__dirname, '../public')));
-app.use(express.static(path.join(__dirname, '../public/views')));
-app.use(express.static(path.join(__dirname, '../public/assets')));
 
 // display a log of all requests on console.
 app.use(morgan('dev'));

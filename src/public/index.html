@@ -3,8 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap.min.css">-->
+
+    <!--<script src="http://code.angularjs.org/1.5.8/angular.min.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/angularjs/1.5.5/angular-animate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/angular.ui-router/1.0.0-alpha0/angular-ui-router.min.js"></script>
+
 </head>
-<body>
-    <h1>index.html</h1>
+<body ng-app="app">
+
+<!--Header-->
+<div class="jumbotron text-center">
+    <h1>TODO List </h1>
+</div>
+
+<a ui-sref="system">system</a>
+<a ui-sref="student">student</a>
+<hr>
+<!-- ng ui view -->
+<div ui-view></div>
+
+
+<script src="lib/app.js"></script>
+<!-- Load customized js -->
+<script src="routes/system/systemRoute.js"></script>
+<script src="controllers/system/systemController.js"></script>
+
+
 </body>
 </html>
