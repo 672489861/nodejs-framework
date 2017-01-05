@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS testnode DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+USE testnode;
 -- ----------------------------
 -- Table structure for t_student
 -- ----------------------------
