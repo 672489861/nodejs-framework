@@ -6,7 +6,7 @@ var logger = require('../utils/logger.js');
 module.exports = {
   register: function (app) {
     // user interceptor
-    // app.use(require('../middlewares/loginInterceptor.js'));
+    app.use(require('../middlewares/loginInterceptor.js'));
 
     app.use('/user', require('./user/user.js'));
     app.use('/system', require('./system/system.js'));  //   crud method not include transaction
