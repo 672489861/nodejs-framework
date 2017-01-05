@@ -1,0 +1,47 @@
+{
+  "name": "framework",
+  "version": "1.0.0",
+  "description": "framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover _mocha --recursive \"src/test/routes/system/*.js\"  ",
+    "test-windows": "istanbul cover node_modules/mocha/bin/_mocha --recursive \"src/test/routes/system/*.js\"  ",
+    "test-mocha": "mocha --recursive \"src/test/\" ",
+    "lint-local": "eslint src/server/** -f html -o checkstyle-result.html",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js"
+  },
+  "author": "Arnold",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.4",
+    "body-parser": "^1.15.2",
+    "connect-mongo": "^1.3.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.14.2",
+    "ldapjs": "^1.0.1",
+    "method-override": "^2.3.7",
+    "moment": "^2.17.1",
+    "mongoose": "^4.7.5",
+    "mysql": "^2.12.0",
+    "request": "^2.79.0",
+    "sha1": "^1.1.1",
+    "winston": "^2.3.0",
+    "winston-daily-rotate-file": "^1.4.2",
+    "winston-syslog": "^1.2.5"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.12.2",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
+    "supertest": "^2.0.1"
+  }
+}
