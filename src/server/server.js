@@ -3,7 +3,8 @@
  */
 // import modules
 var express = require('express'), session = require('express-session'), MongoStore = require('connect-mongo')(session),
-  path = require('path'), bodyParser = require('body-parser'), methodOverride = require('method-override');
+  path = require('path'), bodyParser = require('body-parser'), methodOverride = require('method-override'),
+  morgan = require('morgan');
 
 // import config
 var config = require('./config/config.js');
@@ -28,6 +29,9 @@ app.use(methodOverride('X-Method-Override'));
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../public/views')));
 app.use(express.static(path.join(__dirname, '../public/assets')));
+
+// display a log of all requests on console.
+app.use(morgan('dev'));
 
 // configuration session
 app.use(session({
