@@ -26,9 +26,8 @@ var mysqlUtil = (function () {
         } else {
           resultConnection.query(sql, args, function (err, result) {
             if (err) {
-              rollback(connection);
+              rollback(resultConnection);
             }
-            _pool.releaseConnection(resultConnection);
             cb(err, result);
           });
         }
@@ -80,7 +79,7 @@ var mysqlUtil = (function () {
   };
 
   // rollback
-  function rollback (connection) {
+  function rollback(connection) {
     connection.rollback(function () {
       // releaseConnection
       _pool.releaseConnection(connection);

@@ -1,7 +1,7 @@
 /**
  * Created by Arnold on 2016/12/30.
  */
-var logger = require('../utils/logger.js');
+var logger = require('../utils/logger.js'), ResponseData = require('../utils/responseData.js');
 
 module.exports = {
   register: function (app) {
@@ -16,7 +16,7 @@ module.exports = {
     app.use(function (err, req, res, next) {
       if (err) {
         logger.error(err.stack);
-        res.status(500).json({status: 500, moduleName: err.moduleName, message: err.message});
+        res.status(500).json(new ResponseData(500, err.message));
       } else {
         next();
       }
@@ -25,7 +25,7 @@ module.exports = {
     // 404 handle
     app.use(function (req, res) {
       if (!res.headersSent) {
-        res.status(404).json({status: 404, url: req.originalUrl, message: '地址不存在!'});
+        res.status(404).json(new ResponseData(404, '地址不存在'));
       }
     });
   }

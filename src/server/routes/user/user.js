@@ -41,7 +41,6 @@ router.post('/', function (req, res, next) {
   userDao.addUser([name, age], function (err) {
     next(new Errors.Database('system', err.message));
   }, function (result) {
-    console.info(result);
     res.json(new ResponseData(200, '新增成功', result));
   });
 });

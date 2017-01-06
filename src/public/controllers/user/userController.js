@@ -18,7 +18,6 @@ angular.module('app.user')
     $scope.deleteUser = function (id) {
       $http.delete('/user/' + id).success(function (data) {
         $scope.user = {};
-        console.info(data);
         $scope.users = data.obj;
       }).error(function (err) {
         console.log('Error : ', err);
