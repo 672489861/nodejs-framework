@@ -4,13 +4,13 @@
 </div>
 
 <!-- item info -->
-<div id="todo-list" class="row" ng-hide="false">
+<div id="todo-list" class="row" >
     <div class="col-sm-4 col-sm-offset-4 text-center">
         <form>
             <div class="form-group">
-                <input type="hidden" ng-model="system.id"/>
+                <input type="hidden" ng-model="user.id"/>
                 <input type="text" class="form-control input-lg text-center" placeholder="Enter new name"
-                       ng-model="system.name" required>
+                       ng-model="user.name" required>
             </div>
             <button class="btn btn-primary btn-lg" ng-click="updateSystem()"> Save</button>
         </form>

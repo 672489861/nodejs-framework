@@ -1,0 +1,9 @@
+<div class="col-sm-4 col-sm-offset-4">
+    <div class="checkbox" ng-repeat="user in users | orderBy: 'text'">
+        <label>
+            <input type="checkbox">{{ $index + 1 }} : {{user.name}} <a href ng-click="gotoDetailPage(user.id)">Edit</a>&nbsp;
+            <a href ng-click="deleteUser(user.id)">Delete</a>
+        </label>
+    </div>
+</div>
+<div class="col-sm-4 col-sm-offset-4"><a class="btn btn-default" href ui-sref="userAdd">add new item</a></div>

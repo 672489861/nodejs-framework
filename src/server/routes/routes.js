@@ -8,8 +8,7 @@ module.exports = {
     // user interceptor
     // app.use(require('../middlewares/loginInterceptor.js'));
 
-    app.use('/user', require('./user/user.js'));
-    app.use('/system', require('./system/system.js'));  //   crud method not include transaction
+    app.use('/user', require('./user/user.js'));  // crud method not include transaction
     app.use('/student', require('./student/student.js')); //  crud method include transaction
     app.use('/schedulers', require('./schedulerJobs/schedulerJobs.js'));  // download and request interface
 
