@@ -3,7 +3,11 @@
  */
 angular.module('app.user', ['ui.router'])
   .config(function ($stateProvider, $urlRouterProvider) {
-    $stateProvider.state('user', {
+    $stateProvider.state('login', {
+      url: '/login',
+      templateUrl: 'views/login.html',
+      controller: 'UserController'
+    }).state('user', {
       url: '/user',
       templateUrl: 'views/user/user_list.html',
       controller: 'UserController'
