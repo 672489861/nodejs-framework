@@ -27,6 +27,8 @@ var mysqlUtil = (function () {
           resultConnection.query(sql, args, function (err, result) {
             if (err) {
               rollback(resultConnection);
+            } else {
+              _pool.releaseConnection(resultConnection);
             }
             cb(err, result);
           });

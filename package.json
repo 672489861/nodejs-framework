@@ -1,8 +1,9 @@
 {
-  "name": "framework",
+  "name": "nodejs-framework",
   "version": "1.0.0",
-  "description": "framework",
+  "description": "nodejs-framework",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "istanbul cover _mocha --recursive \"src/test/routes/system/*.js\"  ",
     "test-windows": "istanbul cover node_modules/mocha/bin/_mocha --recursive \"src/test/routes/system/*.js\"  ",
